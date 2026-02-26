@@ -1,19 +1,19 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
 
-.container{
+.container {
     width: 100%;
     min-height: 100vh;
     background: linear-gradient(125deg, #F8EAED, #E07EA7, #F2CFDB, #FCFFFA);
     padding: 10px;
 }
 
-.do-to-list-app{
-    width: 100% ;
+.do-to-list-app {
+    width: 100%;
     max-width: 540px;
     background-color: #FCFFFA;
     margin: 100px auto 20px;
@@ -22,11 +22,11 @@
 }
 
 .do-to-list-app img {
-  width: 50px;
-  margin-left: 10px;
+    width: 50px;
+    margin-left: 10px;
 }
 
-.do-to-list-app h2{
+.do-to-list-app h2 {
     color: #333333;
     display: flex;
     align-items: center;
@@ -34,7 +34,7 @@
     font-family: cursive;
 }
 
-.row{
+.row {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -44,8 +44,8 @@
     margin-bottom: 25px;
 }
 
-input{
-    flex:  1;
+input {
+    flex: 1;
     border: none;
     outline: none;
     background: transparent;
@@ -53,16 +53,16 @@ input{
     font-family: cursive;
 }
 
-button{
-   border: none;
-   outline: none;
-   padding: 10px 25px;
-   background: #333333;
-   color: #FCFFFA;
-   font-size: 16px;
-   cursor: pointer;
-   border-radius: 40px;
-   font-family: cursive;
+button {
+    border: none;
+    outline: none;
+    padding: 10px 25px;
+    background: #333333;
+    color: #FCFFFA;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    font-family: cursive;
 }
 
 ul li {
@@ -72,7 +72,9 @@ ul li {
     user-select: none;
     cursor: pointer;
     position: relative;
-    text-align: center;   
+    text-align: center;
+    font-family: cursive;
+    
 }
 
 ul {
@@ -90,13 +92,32 @@ ul li::before {
     background-position: center;
     top: 50%;
     left: 10px;
-    transform: translateY(-50%);  
+    transform: translateY(-50%);
 }
 
-ul li.checked{
+ul li.checked {
     color: #333333;
     text-decoration: line-through;
 }
-ul li.checked::before{
+
+ul li.checked::before {
     background-image: url(images/pink.jpg);
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40;
+    font-size: 22px;
+    color: #333333;
+    line-height: 40px;
+    text-align: center;
+
+}
+
+ul li span:hover {
+    background: #EAADC6;
+
 }
