@@ -17,6 +17,7 @@ function addTask() {
     saveData();
 }
 
+
 inputBox.addEventListener("keydown", function (e) {
     if (e.key === "Enter") {
         addTask();
@@ -24,7 +25,6 @@ inputBox.addEventListener("keydown", function (e) {
 });
 
 listContainer.addEventListener("click", function (e) {
-
     if (e.target.tagName === "LI") {
         e.target.classList.toggle("checked");
         saveData();
@@ -33,7 +33,6 @@ listContainer.addEventListener("click", function (e) {
         e.target.parentElement.remove();
         saveData();
     }
-
 }, false);
 
 function saveData() {
