@@ -74,7 +74,7 @@ ul li {
     position: relative;
     text-align: center;
     font-family: cursive;
-    
+
 }
 
 ul {
@@ -120,4 +120,70 @@ ul li span {
 ul li span:hover {
     background: #EAADC6;
 
+}
+
+
+.sticker {
+    position: fixed;
+    z-index: 999;
+    pointer-events: none;
+}
+
+
+.sticker-bunny {
+    width: 110px;
+    top: 10px;
+    left: 10px;
+    transform: rotate(-10deg);
+    mix-blend-mode: multiply;
+}
+
+.sticker-safety {
+    width: 90px;
+    top: 10px;
+    right: 10px;
+    transform: rotate(15deg);
+    mix-blend-mode: multiply;
+}
+
+
+.sticker-star {
+    width: 90px;
+    bottom: 10px;
+    left: 10px;
+    transform: rotate(-8deg);
+    mix-blend-mode: multiply;
+}
+
+.sticker-tulip {
+    width: 100px;
+    bottom: 10px;
+    right: 10px;
+    transform: rotate(10deg);
+    mix-blend-mode: multiply;
+}
+
+.app-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 540px;
+    margin: 100px auto 20px;
+}
+
+.do-to-list-app {
+    width: 100%;
+    background-color: #FCFFFA;
+    margin: 0;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.sticker-safety {
+    position: absolute;
+    width: 80px;
+    top: -35px;
+    left: -20px;
+    transform: rotate(-30deg);
+    z-index: 10;
+    mix-blend-mode: multiply;
 }
